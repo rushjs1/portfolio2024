@@ -10,7 +10,14 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        "fade-in": {
+          "0%": { opacity: 0, transform: "translateY(24px)" },
+          "100%": { opacity: 1, transform: "translateY(0)" },
+        },
+      },
       animation: {
+        "fade-in": "fade-in .3s ease-in-out",
         "spin-slow": "spin 50s linear infinite",
         "pulse-slow": "pulse 10s linear infinite",
       },
