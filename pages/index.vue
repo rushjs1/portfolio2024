@@ -30,20 +30,20 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
   <div class="flex items-center space-x-4">
     <NuxtLink to="https://github.com/rushjs1" target="_blank" external>
       <div class="bg-white rounded-md p-1">
-        <IconGithubIcon />
+        <IconGithub />
       </div>
     </NuxtLink>
 
     <NuxtLink to="https://www.linkedin.com/in/john-rush-6680101a4" external>
       <div class="bg-white rounded-md p-1">
-        <IconLinkedinIcon />
+        <IconLinkedin />
       </div>
     </NuxtLink>
   </div>
   <div class="flex items-center space-x-4">
     <NuxtLink
       to="/projects"
-      class="px-8 relative bg-white/20 flex grow-0 text-sm items-center group py-2 border border-white/20 rounded-md space-x-2"
+      class="px-8 relative bg-white/10 flex grow-0 text-sm items-center group py-2 border border-white/20 rounded-md space-x-2"
     >
       <span class="group-hover:-translate-x-4 duration-200 ease-out">
         My Projects
