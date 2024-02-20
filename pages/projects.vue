@@ -126,7 +126,7 @@
         title="Nuxt-goto-alias.nvim"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
         img="/nuxt-goto.png"
-        link="https://github.com/rushjs1/clock.nvim"
+        link="https://github.com/rushjs1/nuxt-goto-alias.nvim"
       >
         <template #tags>
           <ProjectTag title="Neovim">

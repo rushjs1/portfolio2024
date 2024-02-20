@@ -42,7 +42,7 @@ const props = defineProps({
       <div
         class="mx-2 rounded-md transition-all duration-200 w-fit hover:ring-[1px] ring-white/15 mt-2 p-1 hover:bg-white/10"
       >
-        <IconExternalLink class="h-5 w-5" />
+        <IconExternalLink class="h-4 w-4" />
       </div>
     </NuxtLink>
   </div>
