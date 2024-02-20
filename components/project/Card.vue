@@ -25,7 +25,7 @@ const props = defineProps({
       <div class="overflow-hidden rounded-t-lg h-48">
         <img
           :src="props.img"
-          class="rounded-t-lg h-full w-full hover:scale-105 transition-all duration-200 object-cover"
+          class="rounded-t-lg h-full w-full hover:scale-105 transition-all duration-200 object-cover object-top"
         />
       </div>
     </NuxtLink>

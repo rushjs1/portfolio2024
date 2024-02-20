@@ -4,7 +4,7 @@
       <BackButton />
       <span class="text-5xl font-bold"> Projects </span>
     </div>
-    <div class="w-full mt-6 mb-20 grid grid-cols-2 gap-4">
+    <div class="w-full mt-6 mb-20 grid md:grid-cols-2 grid-cols-1 gap-4">
       <ProjectCard
         title="Filter Fetch"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
@@ -78,8 +78,29 @@
             <IconTypescript class="h-4 w-4" />
           </ProjectTag>
 
+          <ProjectTag title="Laravel">
+            <IconLaravel class="h-4 w-4" />
+          </ProjectTag>
+
           <ProjectTag title="New Design">
             <IconPaintBrush class="h-4 w-4" />
+          </ProjectTag>
+        </template>
+      </ProjectCard>
+
+      <ProjectCard
+        title="Tailwind UI Rebuilds"
+        body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
+        img="/tur2.png"
+        link="https://tailwind-ui-rebuilds.netlify.app/"
+      >
+        <template #tags>
+          <ProjectTag title="Vue">
+            <IconVue class="h-4 w-4" />
+          </ProjectTag>
+
+          <ProjectTag title="Tailwindcsss">
+            <IconTailwind class="h-4 w-4" />
           </ProjectTag>
         </template>
       </ProjectCard>
@@ -96,10 +117,28 @@
           </ProjectTag>
 
           <ProjectTag title="Plugin">
-            <IconPuzzlePiece class="h-3.5 w-3.5" />
+            <IconPuzzlePiece class="h-4 w-4" />
           </ProjectTag>
         </template>
       </ProjectCard>
+
+      <ProjectCard
+        title="Nuxt-goto-alias.nvim"
+        body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
+        img="/nuxt-goto.png"
+        link="https://github.com/rushjs1/clock.nvim"
+      >
+        <template #tags>
+          <ProjectTag title="Neovim">
+            <IconNeovim class="h-4 w-4" />
+          </ProjectTag>
+
+          <ProjectTag title="Plugin">
+            <IconPuzzlePiece class="h-4 w-4" />
+          </ProjectTag>
+        </template>
+      </ProjectCard>
+
       <div class="bg-emerald-500">foo</div>
     </div>
   </div>

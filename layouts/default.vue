@@ -18,10 +18,19 @@
       </header>
 
       <div
-        class="m-auto animate-fade-in space-y-6 px-10 flex flex-col pt-48 items-start h-full w-full transition-width duration-200 xl:w-1/2"
+        class="m-auto animate-fade-in shrink-0 space-y-6 px-10 flex flex-col pt-48 items-start h-full w-full transition-width duration-200 xl:w-2/3"
       >
         <slot />
       </div>
+
+      <footer class="fixed bottom-0 flex items-center justify-center w-full p-3 backdrop-blur-sm">
+        <div class="text-xs inline-flex items-center space-x-2">
+          <span>
+            Made with 
+          </span>
+          <IconNuxt class="h-5 w-5" />
+        </div>
+      </footer>
     </div>
   </div>
 </template>
@@ -36,7 +45,7 @@ html {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" transform="scale(3)"%3E%3Crect width="100%25" height="100%25" fill="hsl(0, 0%25, 8.5%25)"%3E%3C/rect%3E%3Crect width="100%25" height="100%25" fill="hsl(0, 0%25, 8.5%25)"%3E%3C/rect%3E%3Cpath fill="none" stroke="hsl(0, 0%25, 11.0%25)" stroke-width=".2" d="M10 0v20ZM0 10h20Z"%3E%3C/path%3E%3C/svg%3E');
   background-repeat: repeat;
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   background-size: 40px 40px;
 }
 
@@ -44,7 +53,7 @@ html {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' transform='scale(3)'%3E%3Crect width='100%25' height='100%25' fill='%23fff'/%3E%3Cpath fill='none' stroke='hsla(0, 0%25, 98%25, 1)' stroke-width='.2' d='M10 0v20ZM0 10h20Z'/%3E%3C/svg%3E");
   background-repeat: repeat;
   width: 100%;
-  height: 100dvh;
+  min-height: 100dvh;
   background-size: 40px 40px;
 }
 </style>
