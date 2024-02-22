@@ -58,7 +58,7 @@
       <ProjectCard
         title="Filter Fetch Mobile"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
-        img="/ff-mobile.png"
+        img="/ff-mobile4.png"
         link="itms-apps://apps.apple.com/us/app/filterfetch-mobile/id1166270595"
       >
         <template #tags>
@@ -108,7 +108,7 @@
       <ProjectCard
         title="Clock.nvim"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
-        img="/clock.png"
+        img="/clock-alt2.png"
         link="https://github.com/rushjs1/clock.nvim"
       >
         <template #tags>
@@ -125,7 +125,7 @@
       <ProjectCard
         title="Nuxt-goto-alias.nvim"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
-        img="/nuxt-goto.png"
+        img="/nuxt-goto-alt.png"
         link="https://github.com/rushjs1/nuxt-goto-alias.nvim"
       >
         <template #tags>

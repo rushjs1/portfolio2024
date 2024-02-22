@@ -22,10 +22,10 @@ const props = defineProps({
 <template>
   <div class="bg-white/10 space-y-2 ring-[1px] rounded-lg pb-2 ring-white/30">
     <NuxtLink :to="props.link" target="_blank" external>
-      <div class="overflow-hidden rounded-t-lg h-48">
+      <div class="overflow-hidden rounded-t-lg">
         <img
           :src="props.img"
-          class="rounded-t-lg h-full w-full hover:scale-105 transition-all duration-200 object-cover object-top"
+          class="rounded-t-lg hover:scale-105 transition-all h-full w-full object-cover duration-200"
         />
       </div>
     </NuxtLink>

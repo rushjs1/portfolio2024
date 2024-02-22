@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full text-white min-h-screen bg-blue-500">
+  <div class="w-full text-white min-h-screen bg-[#161616]">
     <div class="foo">
       <div
         class="bg-blue-500 absolute bottom-24 xl:right-72 transition-all duration-200 right-0 w-40 h-40 blur-3xl"
