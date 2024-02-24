@@ -13,7 +13,7 @@
         class="bg-yellow-500 absolute bottom-20 xl:right-96 transition-all duration-200 right-10 w-40 h-40 blur-3xl"
       ></div> -->
 
-      <header class="w-full fixed right-0 left-0 top-0 p-4 backdrop-blur-sm">
+      <header class="w-full fixed right-0 left-0 top-0 p-4 backdrop-blur-sm z-40">
         <TheNavbar />
       </header>
 

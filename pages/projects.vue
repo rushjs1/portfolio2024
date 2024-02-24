@@ -8,7 +8,7 @@
       <ProjectCard
         title="Filter Fetch"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
-        img="/ff2.png"
+        img="/filter-fetch-card-bg.png"
         link="https://filterfetch.com"
       >
         <template #tags>
@@ -33,7 +33,7 @@
       <ProjectCard
         title="EContractor"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
-        img="/EContractor_2.0.png"
+        img="/EContractor-card-bg.png"
         link="https://v2--rainmakerhvac.netlify.app/econtractor#/home"
       >
         <template #tags>
@@ -58,7 +58,7 @@
       <ProjectCard
         title="Filter Fetch Mobile"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
-        img="/ff-mobile4.png"
+        img="/filter-fetch-mobile-card-bg.png"
         link="itms-apps://apps.apple.com/us/app/filterfetch-mobile/id1166270595"
       >
         <template #tags>
@@ -102,18 +102,23 @@
           <ProjectTag title="Tailwindcsss">
             <IconTailwind class="h-4 w-4" />
           </ProjectTag>
+
         </template>
       </ProjectCard>
 
       <ProjectCard
         title="Clock.nvim"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
-        img="/clock-alt2.png"
+        img="/clock-bg.png"
         link="https://github.com/rushjs1/clock.nvim"
       >
         <template #tags>
           <ProjectTag title="Neovim">
             <IconNeovim class="h-4 w-4" />
+          </ProjectTag>
+
+          <ProjectTag title="Lua">
+            <IconLua class="h-4 w-4" />
           </ProjectTag>
 
           <ProjectTag title="Plugin">
@@ -125,7 +130,7 @@
       <ProjectCard
         title="Nuxt-goto-alias.nvim"
         body="Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo blanditiis ratione culpa provident vero corporis perferendis,"
-        img="/nuxt-goto-alt.png"
+        img="/nuxt-goto.nvim-card-bg.png"
         link="https://github.com/rushjs1/nuxt-goto-alias.nvim"
       >
         <template #tags>
@@ -133,9 +138,14 @@
             <IconNeovim class="h-4 w-4" />
           </ProjectTag>
 
+          <ProjectTag title="Lua">
+            <IconLua class="h-4 w-4" />
+          </ProjectTag>
+
           <ProjectTag title="Plugin">
             <IconPuzzlePiece class="h-4 w-4" />
           </ProjectTag>
+
         </template>
       </ProjectCard>
 
