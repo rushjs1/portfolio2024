@@ -4,6 +4,7 @@
     stroke="currentColor"
     fill="currentColor"
     viewBox="0 0 512 512"
+    class="text-[#2f6bff]"
   >
     <path
       d="M256 153.9A102.1 102.1 0 10358.1 256 102.23 102.23 0 00256 153.9z"

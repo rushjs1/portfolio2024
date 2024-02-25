@@ -15,8 +15,13 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
 <div class="bg-yellow-500 w-1/2 h-full">bar</div>
 </div> -->
 
-    <img
+    <!-- <img
       src="https://cdn.discordapp.com/attachments/958954015641702400/964913112291606598/chest.png?ex=65da0ddd&is=65c798dd&hm=38c36096849d85302dda5e93e397e049666215b6aa758751f2b4f0889f2f3205&"
+      class="ring-[2px] rounded-lg w-full h-full absolute ring-white/20"
+    /> -->
+
+    <img
+      src="/chest.png"
       class="ring-[2px] rounded-lg w-full h-full absolute ring-white/20"
     />
   </div>
