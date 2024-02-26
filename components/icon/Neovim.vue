@@ -9,9 +9,6 @@
     version="1.1"
   >
     <title>neovim-mark@2x</title>
-    <description>
-      Created with Sketch (http://www.bohemiancoding.com/sketch)
-    </description>
     <defs>
       <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
         <stop stop-color="#16B0ED" stop-opacity="0.800235524" offset="0%" />
