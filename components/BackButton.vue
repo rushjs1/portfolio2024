@@ -1,9 +1,9 @@
 <script setup></script>
 
 <template>
-  <button @click="$router.back()">
+  <NuxtLink to="/">
     <slot>
       <IconArrowLeft />
     </slot>
-  </button>
+  </NuxtLink>
 </template>

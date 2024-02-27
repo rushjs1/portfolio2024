@@ -32,18 +32,14 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
     I am a web developer from <b>Indianapolis, Indiana</b> with a passion for
     building secure and user friendly web applications.
   </span>
-  <div class="flex items-center space-x-4">
-    <NuxtLink to="https://github.com/rushjs1" target="_blank" external>
-      <div class="bg-white rounded-md p-1">
-        <IconGithub />
-      </div>
-    </NuxtLink>
+  <div class="flex items-center space-x-3">
+    <SocialMediaButton to="https://github.com/rushjs1">
+      <IconGithub />
+    </SocialMediaButton>
 
-    <NuxtLink to="https://www.linkedin.com/in/john-rush-6680101a4" external>
-      <div class="bg-white rounded-md p-1">
+    <SocialMediaButton to="https://www.linkedin.com/in/john-rush-6680101a4">
         <IconLinkedin />
-      </div>
-    </NuxtLink>
+    </SocialMediaButton>
   </div>
   <div class="flex items-center space-x-4">
     <NuxtLink

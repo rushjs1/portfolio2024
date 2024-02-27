@@ -45,8 +45,8 @@ function getTagIcon(tag: string){
          <component :is="getTagIcon(tag.component)" class="h-4 w-4"/>
       </div>
     </div>
-    <span class="text-3xl font-bold px-2"> {{ props.project.title }}</span>
-    <div class="text-sm px-2">
+    <span class="text-3xl tracking-wide font-bold px-2"> {{ props.project.title }}</span>
+    <div class="text-sm leading-normal px-2">
       {{ props.project.description }}
     </div>
 

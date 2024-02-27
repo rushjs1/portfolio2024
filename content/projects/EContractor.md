@@ -1,7 +1,7 @@
 ---
 id: 2
 title: EContractor 
-description: 'E-Commerce store for contractor websites. Highly customizable and integrates into any type of website. Notable features include product subscriptions, customizable product markups, customizable promo codes, marketing emails and more.'
+description: 'E-Commerce store for contractor websites. Highly customizable and integrates into any type of website. Notable features include product subscriptions, customizable product markups, customizable promo codes, marketing emails and more. Currently Installed on 200+ websites.'
 image: '/EContractor-card-bg.png'
 link: 'https://v2--rainmakerhvac.netlify.app/econtractor#/home'
 tags: 
