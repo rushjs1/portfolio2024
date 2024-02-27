@@ -20,6 +20,9 @@ const props = defineProps({
 let icons = [Vue, Laravel, Tailwind, PaintBrush, Ionic, Capacitor, Typescript, Neovim, Lua, PuzzlePiece]
 
 function getTagIcon(tag: string){
+  icons.forEach((i) => {
+    console.log(i)
+  })
 
  return icons.find((i) => i.__file?.includes(tag))
 }
