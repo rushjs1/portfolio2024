@@ -18,7 +18,7 @@
       </header>
 
       <div
-        class="m-auto animate-fade-in shrink-0 space-y-6 md:px-10 px-4 flex flex-col pt-48 items-start h-full w-full transition-width duration-200 xl:w-2/3"
+        class="m-auto max-w-[1400px] animate-fade-in shrink-0 space-y-6 md:px-10 px-4 flex flex-col pt-48 items-start h-full w-full transition-width duration-200 xl:w-2/3"
       >
         <slot />
       </div>

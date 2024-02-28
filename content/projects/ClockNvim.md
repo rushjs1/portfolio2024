@@ -6,7 +6,7 @@ image: '/clock.nvim-card-bg.png'
 link: 'https://github.com/rushjs1/clock.nvim'
 tags: 
   - component: 'Neovim'
-    title: 'Lua'
+    title: 'Neovim'
   - component: 'Lua'
     title: 'Lua'
   - component: 'PuzzlePiece'

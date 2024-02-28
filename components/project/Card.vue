@@ -17,14 +17,35 @@ const props = defineProps({
   }
 });
 
-let icons = [Vue, Laravel, Tailwind, PaintBrush, Ionic, Capacitor, Typescript, Neovim, Lua, PuzzlePiece]
+//let icons = [Vue, Laravel, Tailwind, PaintBrush, Ionic, Capacitor, Typescript, Neovim, Lua, PuzzlePiece]
+
+let icons = [
+  {tag: 'Vue', icon: Vue},
+  {tag: 'Laravel', icon: Laravel},
+  {tag: 'Tailwindcss', icon: Tailwind},
+  {tag: 'New Design', icon: PaintBrush},
+  {tag: 'Ionic', icon: Ionic},
+  {tag: 'Capacitor', icon: Capacitor},
+  {tag: 'TypeScript', icon: Typescript},
+  {tag: 'Neovim', icon: Neovim},
+  {tag: 'Lua', icon: Lua},
+  {tag: 'Plugin', icon: PuzzlePiece},
+]
+
+
+/* let icons = [
+  {tag: 'vue', icon: 'logos:vue'},
+  {tag: 'laravel', icon: 'logos:laravel'}
+] */
 
 function getTagIcon(tag: string){
-  icons.forEach((i) => {
+  // FIX: this doesnt work in prod.
+  /* icons.forEach((i) => {
     console.log(i)
-  })
+  }) */
 
- return icons.find((i) => i.__file?.includes(tag))
+ //return icons.find((i) => i.__file?.includes(tag))
+  return icons.find((i) => i.tag === tag)?.icon
 }
 </script>
 
@@ -45,7 +66,7 @@ function getTagIcon(tag: string){
         class="flex items-center shrink-0 ring-[1px] ring-white/15 gap-2 bg-white/10 px-2 py-1 rounded-md"
       >
         <span class="text-xs">{{ tag.title }}</span>
-         <component :is="getTagIcon(tag.component)" class="h-4 w-4"/>
+        <component :is="getTagIcon(tag.title)" class="h-4 w-4"/>
       </div>
     </div>
     <span class="text-3xl tracking-wide font-bold px-2"> {{ props.project.title }}</span>
