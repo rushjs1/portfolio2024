@@ -1,15 +1,4 @@
 <script setup lang="ts">
-import Vue from '@/components/icon/Vue.vue';
-import Laravel from '@/components/icon/Laravel.vue';
-import Tailwind from '@/components/icon/Tailwind.vue';
-import PaintBrush from '@/components/icon/PaintBrush.vue';
-import Ionic from '@/components/icon/Ionic.vue';
-import Capacitor from '@/components/icon/Capacitor.vue';
-import Typescript from '@/components/icon/Typescript.vue';
-import Neovim from '@/components/icon/Neovim.vue';
-import Lua from '@/components/icon/Lua.vue';
-import PuzzlePiece from '@/components/icon/PuzzlePiece.vue';
-
 const props = defineProps({
   project: {
     type: Object,
@@ -17,36 +6,23 @@ const props = defineProps({
   }
 });
 
-//let icons = [Vue, Laravel, Tailwind, PaintBrush, Ionic, Capacitor, Typescript, Neovim, Lua, PuzzlePiece]
-
-let icons = [
-  {tag: 'Vue', icon: Vue},
-  {tag: 'Laravel', icon: Laravel},
-  {tag: 'Tailwindcss', icon: Tailwind},
-  {tag: 'New Design', icon: PaintBrush},
-  {tag: 'Ionic', icon: Ionic},
-  {tag: 'Capacitor', icon: Capacitor},
-  {tag: 'TypeScript', icon: Typescript},
-  {tag: 'Neovim', icon: Neovim},
-  {tag: 'Lua', icon: Lua},
-  {tag: 'Plugin', icon: PuzzlePiece},
+let icons2 = [
+  {tag: 'Vue', icon: 'logos:vue'},
+  {tag: 'Laravel', icon: 'logos:laravel'},
+  {tag: 'Tailwindcss', icon: 'devicon:tailwindcss'},
+  {tag: 'New Design', icon: 'heroicons:paint-brush'},
+  {tag: 'Ionic', icon: 'logos:ionic-icon'},
+  {tag: 'Capacitor', icon: 'devicon:capacitor'},
+  {tag: 'TypeScript', icon: 'devicon:typescript'},
+  {tag: 'Neovim', icon: 'devicon:neovim'},
+  {tag: 'Lua', icon: 'logos:lua'},
+  {tag: 'Plugin', icon: 'heroicons:puzzle-piece'},
 ]
 
-
-/* let icons = [
-  {tag: 'vue', icon: 'logos:vue'},
-  {tag: 'laravel', icon: 'logos:laravel'}
-] */
-
 function getTagIcon(tag: string){
-  // FIX: this doesnt work in prod.
-  /* icons.forEach((i) => {
-    console.log(i)
-  }) */
-
- //return icons.find((i) => i.__file?.includes(tag))
-  return icons.find((i) => i.tag === tag)?.icon
+  return icons2.find((i) => i.tag === tag)?.icon
 }
+
 </script>
 
 <template>
@@ -66,7 +42,7 @@ function getTagIcon(tag: string){
         class="flex items-center shrink-0 ring-[1px] ring-white/15 gap-2 bg-white/10 px-2 py-1 rounded-md"
       >
         <span class="text-xs">{{ tag.title }}</span>
-        <component :is="getTagIcon(tag.title)" class="h-4 w-4"/>
+        <Icon :name="getTagIcon(tag.title) as string"/>
       </div>
     </div>
     <span class="text-3xl tracking-wide font-bold px-2"> {{ props.project.title }}</span>
