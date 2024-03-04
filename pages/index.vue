@@ -5,7 +5,7 @@ console.log("foo");
 <template>
   <div class="relative shadow-lg group shrink-0 h-32 w-32 p-1 rounded-lg">
     <div
-      class="bg-blue-500 absolute animate-pulse-slow blur-2xl group-hover:blur-3xl transition-all duration-200 top-1 left-1 inset-0 w-32 h-32"
+      class="bg-slate-300 absolute animate-pulse-slow blur-2xl group-hover:blur-3xl transition-all duration-200 top-1 left-1 inset-0 w-32 h-32"
     ></div>
 
     <!-- <div
@@ -15,15 +15,15 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
 <div class="bg-yellow-500 w-1/2 h-full">bar</div>
 </div> -->
 
-    <!-- <img
-      src="https://cdn.discordapp.com/attachments/958954015641702400/964913112291606598/chest.png?ex=65da0ddd&is=65c798dd&hm=38c36096849d85302dda5e93e397e049666215b6aa758751f2b4f0889f2f3205&"
-      class="ring-[2px] rounded-lg w-full h-full absolute ring-white/20"
-    /> -->
-
     <img
-      src="/chest.png"
-      class="ring-[2px] rounded-lg w-full h-full absolute ring-white/20"
+      src="/me.png"
+      class="ring-[2px] rounded-lg object-cover w-full h-full absolute ring-white/20"
     />
+
+    <!-- <img
+      src="/me2.png"
+      class="ring-[2px] rounded-lg h-full w-full absolute object-cover ring-white/20"
+    /> -->
   </div>
   <span class="text-white text-3xl font-bold md:text-6xl sm:text-5xl">
     John Rush

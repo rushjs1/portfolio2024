@@ -1,6 +1,13 @@
 <script setup lang="ts">
 const route = useRoute();
 
+const navArr = [
+  { name: 'Home', to: '/', match: 'index' },
+  { name: 'Projects', to: '/projects', match: 'projects' },
+  { name: 'About', to: '/about', match: 'about' },
+  { name: 'Contact', to: '/contact', match: 'contact' }
+]
+
 function isCurrent(name: string) {
   return route.name === name;
 }
@@ -8,48 +15,16 @@ function isCurrent(name: string) {
 
 <template>
   <div class="flex items-center m-auto justify-end xl:w-1/2 w-full space-x-6">
-    <nav class="ring-[1px] p-0.5 ring-white/20 rounded-lg">
-      <ul class="text-xs font-bold flex items-center space-x-0.5">
-        <NuxtLink to="/">
+    <nav class="p-1">
+      <ul class="text-xs font-bold no-highlight flex items-center space-x-6">
+        <NuxtLink v-for="(r, _) in navArr" :to="r.to" class="group">
           <li
             :class="[
-              isCurrent('index') ? 'bg-white/20' : '',
-              'hover:bg-white/20 p-2 px-3 rounded-md transition-colors duration-200',
+              isCurrent(r.match) ? 'bg-[length:100%_2px]' : '',
+              'p-1 bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out',
             ]"
           >
-            Home
-          </li>
-        </NuxtLink>
-        <NuxtLink to="/projects">
-          <li
-            :class="[
-              isCurrent('projects') ? 'bg-white/20' : '',
-              'hover:bg-white/20 p-2 rounded-md px-3 transition-colors duration-200 ',
-            ]"
-          >
-            Projects
-          </li>
-        </NuxtLink>
-
-        <NuxtLink to="/about">
-          <li
-            :class="[
-              isCurrent('about') ? 'bg-white/20' : '',
-              'hover:bg-white/20 p-2 rounded-md px-3 transition-colors duration-200 ',
-            ]"
-          >
-            About
-          </li>
-        </NuxtLink>
-
-        <NuxtLink to="/contact">
-          <li
-            :class="[
-              isCurrent('contact') ? 'bg-white/20' : '',
-              'hover:bg-white/20 p-2 rounded-md px-3 transition-colors duration-200 ',
-            ]"
-          >
-            Contact
+            {{ r.name }}
           </li>
         </NuxtLink>
       </ul>

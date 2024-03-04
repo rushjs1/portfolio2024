@@ -1,13 +1,18 @@
 <template>
   <div class="w-full text-white min-h-screen bg-[#161616]">
-    <div class="foo">
+    <div class="baz">
+
       <div
-        class="bg-blue-500 fixed bottom-24 xl:right-72 transition-all duration-200 right-0 w-40 h-40 blur-3xl"
+        class="bg-blue-500/40 fixed bottom-24 xl:right-72 transition-all duration-200 right-0 w-40 h-40 blur-3xl"
       ></div>
+
+      <!-- <div
+        class="bg-blue-500 fixed bottom-24 xl:right-72 transition-all duration-200 right-0 w-40 h-40 blur-3xl"
+      ></div> -->
 
       <!--   <div class="bg-blue-500 absolute bottom-24 w-40 right-24 h-40 blur-3xl"></div> -->
 
-      <!--       <div class="bg-orange-500 absolute left-20 w-40 h-40 blur-3xl"></div> -->
+<!--     <div class="bg-orange-500 absolute left-20 w-40 h-40 blur-3xl"></div> -->
 
       <!-- <div
         class="bg-yellow-500 absolute bottom-20 xl:right-96 transition-all duration-200 right-10 w-40 h-40 blur-3xl"
@@ -24,12 +29,14 @@
       </div>
 
       <footer class="fixed bottom-0 flex items-center justify-center w-full p-3 backdrop-blur-sm">
-        <div class="text-xs inline-flex items-center space-x-2">
-          <span>
-            Made with 
-          </span>
-          <IconNuxt class="h-5 w-5" />
-        </div>
+        <NuxtLink to="https://nuxt.com/" target="_blank" external>
+          <div class="text-xs inline-flex items-center space-x-2">
+            <span>
+              Made with 
+            </span>
+            <IconNuxt class="h-5 w-5" />
+          </div>
+        </NuxtLink>
       </footer>
     </div>
   </div>
@@ -55,5 +62,23 @@ html {
   width: 100%;
   min-height: 100vh;
   background-size: 40px 40px;
+}
+
+.baz {
+  background-image: url('noise2.svg');
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+.blah {
+  background-image: url('grid.svg');
+  background-repeat: repeat;
+  min-height: 100vh;
+}
+
+.ahh {
+  background-image: url('cross.svg');
+  background-repeat: repeat;
+  min-height: 100vh;
 }
 </style>

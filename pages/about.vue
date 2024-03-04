@@ -9,16 +9,17 @@
         I am currently employed as a Web Developer at <NuxtLink to="https://jacksonsystems.com/" target="_blank" external ><b><u>Jackson Systems</u></b></NuxtLink>. 
         Outside of my professional endeavors I enjoy spending time with my family and friends, watching sports, gaming, exercising and learning new things about programming!
       </span>
-      <!-- <div>
+      <div>
         <span class='text-xl font-bold'>
-          Fun Facts
+          Additional Interest
         </span>
-        <ul>
-          <li>foo</li>
-          <li>bar</li>
-          <li>baz</li>
+        <ul class="ml-4">
+          <li>3D Art</li>
+          <li>Guitar & Piano</li>
+          <li>Music Production</li>
+          <li>Game Development</li>
         </ul>
-      </div> -->
+      </div>
       <span class="text-lg">
         If you would like to learn more about my work, please feel free to check out my <NuxtLink to="/projects"><u>projects</u></NuxtLink>. Additionally, please feel free to contact me <NuxtLink to="/contact"><u>here</u></NuxtLink>, or at any of the following social medias below for any business inquires!
       </span>

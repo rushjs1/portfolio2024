@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require('tailwindcss/plugin')
+
 export default {
   content: [
     "./components/**/*.{js,vue,ts}",
@@ -36,5 +38,21 @@ export default {
       addVariant("child", "& > *");
       addVariant("child-hover", "& > *:hover");
     },
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        '.no-highlight': {
+          '-webkit-touch-callout': 'none',
+          '-webkit-user-select': 'none',
+          '-khtml-user-select': 'none',
+          '-moz-user-select': 'none',
+          '-ms-user-select': 'none',
+          'user-select': 'none'
+        },
+        '.animate-once': {
+          '-webkit-animation-interation-count': '1',
+          'animation-iteration-count': '1'
+        },
+      })
+    })
   ],
 };

@@ -15,8 +15,6 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
         :key="idx" 
         :project="project"
       />
-
-      <div class="bg-emerald-500">foo</div>
     </div>
   </div>
 </template>
