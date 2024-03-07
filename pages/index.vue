@@ -17,13 +17,8 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
 
     <img
       src="/me.png"
-      class="ring-[2px] rounded-lg object-cover w-full h-full absolute ring-white/20"
-    />
-
-    <!-- <img
-      src="/me2.png"
       class="ring-[2px] rounded-lg h-full w-full absolute object-cover ring-white/20"
-    /> -->
+     />
   </div>
   <span class="text-white text-3xl font-bold md:text-6xl sm:text-5xl">
     John Rush
@@ -42,17 +37,31 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
     </SocialMediaButton>
   </div>
   <div class="flex items-center space-x-4">
-    <NuxtLink
-      to="/projects"
-      class="px-8 relative bg-white/10 flex grow-0 text-sm items-center group py-2 border border-white/20 rounded-md space-x-2"
-    >
-      <span class="group-hover:-translate-x-4 duration-200 ease-out">
-        My Projects
-      </span>
-      <IconArrowRight
-        class="text-white absolute right-4 transition-all w-4 h-4 group-hover:opacity-100 opacity-0 duration-300"
-      />
-    </NuxtLink>
+      <NuxtLink
+        to="/projects"
+        class="px-8 relative flex bg-white/10 grow-0 text-sm items-center group py-2 border border-white/20 rounded-md space-x-2"
+      >
+        <span class="group-hover:-translate-x-4 duration-200 ease-out">
+          My Projects
+        </span>
+        <IconArrowRight
+          class="text-white absolute right-4 transition-all w-4 h-4 group-hover:opacity-100 opacity-0 duration-300"
+        />
+      </NuxtLink>
+
+      <!-- <NuxtLink
+        to="/projects"
+        class="flex bg-gradient-to-r from-[#f8e42e] to-[#ff7d54] group rounded-md space-x-2 z-30 p-0.5"
+      >
+      <div class="flex grow-0 text-sm items-center bg-black px-8 py-2 rounded-md relative">
+        <span class="group-hover:-translate-x-4 duration-200 ease-out">
+          My Projects
+        </span>
+        <IconArrowRight
+          class="text-white absolute right-4 transition-all w-4 h-4 group-hover:opacity-100 opacity-0 duration-300"
+        />
+      </div>
+      </NuxtLink> -->
     <NuxtLink to="/about">
       <span class="text-sm"> About Me </span>
     </NuxtLink>

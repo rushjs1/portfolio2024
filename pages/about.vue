@@ -11,7 +11,7 @@
       </span>
       <div>
         <span class='text-xl font-bold'>
-          Additional Interest
+          Additional Interests
         </span>
         <ul class="ml-4">
           <li>3D Art</li>

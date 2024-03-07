@@ -1,10 +1,27 @@
 <template>
   <div class="w-full text-white min-h-screen bg-[#161616]">
-    <div class="baz">
+    <div class="foo">
+
+      <!-- <div
+        class="bg-blue-800/10 fixed left-64 inset-y-1/4 transition-all duration-200 w-[1500px] h-[300px] rounded-full blur-3xl rotate-[26deg]"
+      ></div> -->
+
+      <!-- <div
+        class="bg-fuchsia-400/10 fixed left-80 transition-all duration-200 w-[1500px] h-[300px] rounded-full blur-3xl rotate-[26deg]"
+      ></div> -->
+
+      <!-- <div
+        class="bg-blue-800/10 fixed left-64 inset-y-1/4 transition-all duration-200 w-[1500px] h-[300px] rounded-full blur-3xl rotate-[26deg]"
+      ></div>
 
       <div
+        class="bg-fuchsia-400/10 fixed left-80 transition-all duration-200 w-[1500px] h-[300px] rounded-full blur-3xl rotate-[26deg]"
+      ></div> -->
+
+
+      <!-- <div
         class="bg-blue-500/40 fixed bottom-24 xl:right-72 transition-all duration-200 right-0 w-40 h-40 blur-3xl"
-      ></div>
+      ></div> -->
 
       <!-- <div
         class="bg-blue-500 fixed bottom-24 xl:right-72 transition-all duration-200 right-0 w-40 h-40 blur-3xl"
