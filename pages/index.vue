@@ -39,21 +39,9 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
   <div class="flex items-center space-x-4">
       <NuxtLink
         to="/projects"
-        class="px-8 relative flex bg-white/10 grow-0 text-sm items-center group py-2 border border-white/20 rounded-md space-x-2"
+        class="gradient p-0.5 rounded-lg group"
       >
-        <span class="group-hover:-translate-x-4 duration-200 ease-out">
-          My Projects
-        </span>
-        <IconArrowRight
-          class="text-white absolute right-4 transition-all w-4 h-4 group-hover:opacity-100 opacity-0 duration-300"
-        />
-      </NuxtLink>
-
-      <!-- <NuxtLink
-        to="/projects"
-        class="flex bg-gradient-to-r from-[#f8e42e] to-[#ff7d54] group rounded-md space-x-2 z-30 p-0.5"
-      >
-      <div class="flex grow-0 text-sm items-center bg-black px-8 py-2 rounded-md relative">
+      <div class="flex grow-0 text-sm items-center bg-black/80 px-8 py-2 rounded-md relative">
         <span class="group-hover:-translate-x-4 duration-200 ease-out">
           My Projects
         </span>
@@ -61,9 +49,31 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
           class="text-white absolute right-4 transition-all w-4 h-4 group-hover:opacity-100 opacity-0 duration-300"
         />
       </div>
-      </NuxtLink> -->
+      </NuxtLink>
+
     <NuxtLink to="/about">
       <span class="text-sm"> About Me </span>
     </NuxtLink>
   </div>
 </template>
+
+<style scoped>
+.gradient {
+	background: linear-gradient(45deg, #f8e42e, #ff7d54);
+}
+
+.gradient:hover {
+	background: linear-gradient(45deg, #f8e42e, #ff7d54, #f8e42e, #ff7d54);
+	background-size: 400% 400%;
+	animation: gradient .75s ease-in-out infinite alternate;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	100% {
+		background-position: 100% 50%;
+	}
+}
+</style>
