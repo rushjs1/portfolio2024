@@ -13,8 +13,10 @@ export default defineEventHandler(async (event) => {
       ]
     }]
   }
+  console.log("foo")
   
   try {
+    console.log("bar")
     await $fetch(webhookUrl, {
       method: 'POST',
       headers: {
@@ -23,11 +25,15 @@ export default defineEventHandler(async (event) => {
       body: JSON.stringify(webhookBody)
     })
   } catch(e){
+    console.log('baz')
+    console.log(e)
+
     throw createError({
       statusCode: 500,
       statusMessage: 'There was a server error.'
     })
   }
+    console.log('argghg')
 
   return { 
     ok: true, 
