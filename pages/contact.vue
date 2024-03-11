@@ -37,6 +37,7 @@ async function submit(){
         title: 'Thank you for your submission!',
         description: 'I will contact you about your inquiry as soon as I can.',
         timeout: 10000,
+        icon: "i-heroicons-check-circle-16-solid",
         callback: () => {
           isDisabled.value = false
         }
@@ -46,6 +47,16 @@ async function submit(){
     }
   }
   catch(error){
+    toast.add({
+      title: 'Error submitting inquiry.',
+      description: 'Please contact me via a different method, or try again later. <br /> <br/> I apologize for the inconvience.',
+      timeout: 10000,
+      icon: "i-heroicons-x-circle-16-solid",
+      color: 'red',
+      callback: () => {
+        isDisabled.value = false
+      }
+    })
     console.error('There was an error', error)
   }
 } 
