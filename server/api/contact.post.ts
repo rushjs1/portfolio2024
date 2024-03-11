@@ -1,8 +1,9 @@
 export default defineEventHandler(async (event) => {
   const { webhookUrl } = useRuntimeConfig(event)
   const body = await readBody(event)
+  console.log(body)
 
-  const webhookBody = {
+  /* const webhookBody = {
     embeds: [{
       title: 'Contact Form Submitted',
       fields: [
@@ -31,5 +32,8 @@ export default defineEventHandler(async (event) => {
   return { 
     ok: true, 
     body
+  } */
+  return {
+    ok: true
   }
 })
