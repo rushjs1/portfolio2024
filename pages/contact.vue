@@ -24,15 +24,7 @@ async function submit(){
   isDisabled.value = true
 
   try {
-    /* const res = await $fetch('/api/contact', {
-      method: 'POST',
-      body: values,
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }) */
-
-    const { ok } = await useFetch('/api/contact', {
+    const res = await $fetch('/api/contact', {
       method: 'POST',
       body: values,
       headers: {
@@ -40,7 +32,7 @@ async function submit(){
       }
     })
 
-    if(ok){
+    if(res.ok){
       toast.add({
         title: 'Thank you for your submission!',
         description: 'I will contact you about your inquiry as soon as I can.',
