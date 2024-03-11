@@ -1,5 +1,5 @@
 export default defineEventHandler(async (event) => {
-  const { webhookUrl } = useRuntimeConfig(event)
+  //const { webhookUrl } = useRuntimeConfig(event)
   const body = await readBody(event)
   console.log(body)
 
@@ -17,7 +17,7 @@ export default defineEventHandler(async (event) => {
   
   try {
     console.log("bar")
-    await $fetch(webhookUrl, {
+    await $fetch('https://discord.com/api/webhooks/1216523466992259132/Qj9nl3iZLFdwec3OiYBLHHXibV3jVZ3uMI803A_1AJTRUxPs8KL8OGx1KzkPGJKflg7_', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
