@@ -4,40 +4,39 @@
       <BackButton />
       <span class="text-5xl font-bold"> About Me </span>
     </div>
-    <div class="w-full p-6 rounded-lg flex-col space-y-4 backdrop-blur-sm bg-white/10 ring-[1px] ring-white/30 mt-6 mb-20 flex items-start">
-      <span class="text-lg">
-        I am currently employed as a Web Developer at <NuxtLink to="https://jacksonsystems.com/" target="_blank" external ><b><u>Jackson Systems</u></b></NuxtLink>. 
-        Outside of my professional endeavors I enjoy spending time with my family and friends, watching sports, gaming, exercising and learning new things about programming!
-      </span>
-      <div>
-        <span class='text-xl font-bold'>
-          Additional Interests
+      <div class="w-full p-6 rounded-lg flex-col space-y-4 backdrop-blur-sm bg-white/10 ring-[1px] ring-white/30 mt-6 mb-20 flex items-start">
+        <span class="text-lg">
+          I am currently employed as a Web Developer at <NuxtLink to="https://jacksonsystems.com/" target="_blank" external ><b><u>Jackson Systems</u></b></NuxtLink>. 
+          Outside of my professional endeavors I enjoy spending time with my family and friends, watching sports, gaming, exercising and learning new things about programming!
         </span>
-        <ul class="ml-4">
-          <li>3D Art</li>
-          <li>Guitar & Piano</li>
-          <li>Music Production</li>
-          <li>Game Development</li>
-        </ul>
-      </div>
-      <span class="text-lg">
-        If you would like to learn more about my work, please feel free to check out my <NuxtLink to="/projects"><u>projects</u></NuxtLink>. Additionally, please feel free to contact me <NuxtLink to="/contact"><u>here</u></NuxtLink>, or at any of the following social medias below for any business inquires!
-      </span>
-      <div class="space-y-3">
-        <span class="text-xl font-bold">
-          Lets Connect
-        </span>
-        <div class="flex items-center space-x-3">
-          <SocialMediaButton to="https://github.com/rushjs1">
-            <IconGithub />
-          </SocialMediaButton>
-
-          <SocialMediaButton to="https://www.linkedin.com/in/john-rush-6680101a4">
-              <IconLinkedin />
-          </SocialMediaButton>
+        <div>
+          <span class='text-xl font-bold'>
+            Additional Interests
+          </span>
+          <ul class="ml-4">
+            <li>3D Art</li>
+            <li>Guitar & Piano</li>
+            <li>Music Production</li>
+            <li>Game Development</li>
+          </ul>
         </div>
+        <span class="text-lg">
+          If you would like to learn more about my work, please feel free to check out my <NuxtLink to="/projects"><u>projects</u></NuxtLink>. Additionally, please feel free to contact me <NuxtLink to="/contact"><u>here</u></NuxtLink>, or at any of the following social medias below for any business inquires!
+        </span>
+        <div class="space-y-3">
+          <span class="text-xl font-bold">
+            Lets Connect
+          </span>
+          <div class="flex items-center space-x-3">
+            <SocialMediaButton to="https://github.com/rushjs1">
+              <IconGithub />
+            </SocialMediaButton>
 
+            <SocialMediaButton to="https://www.linkedin.com/in/john-rush-6680101a4">
+              <IconLinkedin />
+            </SocialMediaButton>
+          </div>
+        </div>
       </div>
-    </div>
   </div>
 </template>

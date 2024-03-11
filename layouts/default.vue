@@ -7,6 +7,10 @@
       ></div> -->
 
       <!-- <div
+        class="blur-[250px] bg-gradient-to-r from-[#f8e42e]/30 to-[#ff7d54]/30 fixed left-64 inset-y-1/4 transition-all duration-200 w-[1500px] h-[300px] rounded-full rotate-[26deg]"
+      ></div> -->
+
+      <!-- <div
         class="bg-fuchsia-400/10 fixed left-80 transition-all duration-200 w-[1500px] h-[300px] rounded-full blur-3xl rotate-[26deg]"
       ></div> -->
 

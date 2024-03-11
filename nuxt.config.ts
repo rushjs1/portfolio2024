@@ -8,5 +8,8 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["@nuxt/content", 'nuxt-icon'],
+  runtimeConfig: {
+    webhookUrl: ''
+  },
+  modules: ["@nuxt/content", '@nuxt/ui', '@vee-validate/nuxt', 'nuxt-icon'],
 });

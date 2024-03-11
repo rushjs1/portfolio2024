@@ -57,15 +57,15 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
   </div>
 </template>
 
-<style scoped>
+<style>
 .gradient {
 	background: linear-gradient(45deg, #f8e42e, #ff7d54);
 }
 
 .gradient:hover {
-	background: linear-gradient(45deg, #f8e42e, #ff7d54, #f8e42e, #ff7d54);
+	background: linear-gradient(45deg, #f8e42e, #ff7d54, #f8e42e, #ff7d54, #f8e42e, #ff7d54, #f8e42e, #ff7d54);
 	background-size: 400% 400%;
-	animation: gradient .75s ease-in-out infinite alternate;
+	animation: gradient .75s ease-out 1.5 alternate;
 }
 
 @keyframes gradient {
