@@ -13,7 +13,7 @@ export default defineEventHandler(async (event) => {
     }]
   }
   
-  await $fetch(webhookUrl, {
+  $fetch(webhookUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
