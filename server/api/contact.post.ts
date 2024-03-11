@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
       headers: {
         'Content-Type': 'application/json'
       },
-      body: webhookBody
+      body: JSON.stringify(webhookBody)
     })
   } catch(e){
     throw createError({
