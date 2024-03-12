@@ -57,7 +57,7 @@ async function submit(){
         isDisabled.value = false
       }
     })
-    console.error('There was an error', error)
+    console.error('There was an error.', error)
   }
 } 
 </script>
