@@ -27,6 +27,7 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
     I am a web developer from <b>Indianapolis, Indiana</b> with a passion for
     building secure and user friendly web applications.
   </span>
+
   <div class="flex items-center space-x-3">
     <SocialMediaButton to="https://github.com/rushjs1">
       <IconGithub />
@@ -41,9 +42,9 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
         to="/projects"
         class="gradient p-0.5 rounded-lg group"
       >
-      <div class="flex grow-0 text-sm items-center bg-black/80 px-8 py-2 rounded-md relative">
+      <div class="flex grow-0 text-sm items-center bg-black/90 px-8 py-2 rounded-md relative">
         <span class="group-hover:-translate-x-4 duration-200 ease-out">
-          My Projects
+          Explore Projects
         </span>
         <IconArrowRight
           class="text-white absolute right-4 transition-all w-4 h-4 group-hover:opacity-100 opacity-0 duration-300"
@@ -51,8 +52,8 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
       </div>
       </NuxtLink>
 
-    <NuxtLink to="/about">
-      <span class="text-sm"> About Me </span>
+    <NuxtLink to="/about" class="group">
+      <span class="text-sm p-1 bg-left-bottom bg-gradient-to-r from-white to-white bg-[length:0%_2px] bg-no-repeat group-hover:bg-[length:100%_2px] transition-all duration-500 ease-out"> About Me </span>
     </NuxtLink>
   </div>
 </template>

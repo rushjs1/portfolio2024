@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  css: ["~/assets/css/main.css"],
   postcss: {
     plugins: {
       tailwindcss: {},
@@ -11,5 +10,5 @@ export default defineNuxtConfig({
   runtimeConfig: {
     webhookUrl: ''
   },
-  modules: ["@nuxt/content", '@nuxt/ui', '@vee-validate/nuxt', 'nuxt-icon'],
+  modules: ["@nuxt/content", '@nuxt/ui', '@vee-validate/nuxt'],
 });
