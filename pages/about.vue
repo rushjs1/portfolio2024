@@ -1,10 +1,5 @@
 <template>
   <div class="flex flex-col items-start w-full">
-    <!-- <div class="flex items-center space-x-4 w-full">
-      <BackButton />
-      <span class="text-5xl font-bold"> About Me </span>
-    </div> -->
-
     <div class="flex flex-col items-start w-full space-y-3">
       <div class="flex items-center space-x-4 w-full">
         <BackButton />

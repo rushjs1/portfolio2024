@@ -2,7 +2,7 @@
 id: 1
 title: Filter Fetch
 description: 'E-Commerce program for HVAC contractors with a focus on streamlining the filter replacement process.'
-image: '/filter-fetch-card-bg.png'
+image: '/filter-fetch-card-js-bg.png'
 link: 'https://filterfetch.com'
 tags:
   - component: 'Vue'

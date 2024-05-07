@@ -26,7 +26,7 @@ function getTagIcon(tag: string){
 </script>
 
 <template>
-  <div class="bg-white/10 space-y-2 backdrop-blur-sm ring-[1px] rounded-lg pb-2 ring-white/30">
+  <div class="bg-white/10 space-y-2 backdrop-blur-sm rounded-lg pb-2 ring-white/30">
     <NuxtLink :to="props.project.link" target="_blank" external>
       <div class="overflow-hidden rounded-t-lg">
         <img

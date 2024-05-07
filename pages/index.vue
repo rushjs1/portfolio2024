@@ -66,7 +66,7 @@ class="absolute flex items-center animate-spin-slow group-hover:blur-3xl top-1 b
 .gradient:hover {
 	background: linear-gradient(45deg, #f8e42e, #ff7d54, #f8e42e, #ff7d54, #f8e42e, #ff7d54, #f8e42e, #ff7d54);
 	background-size: 400% 400%;
-	animation: gradient .75s ease-out 1.5 alternate;
+	animation: gradient .5s ease-out 1.5 alternate;
 }
 
 @keyframes gradient {

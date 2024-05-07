@@ -4,7 +4,7 @@ export default defineEventHandler(async (event) => {
 
   const webhookBody = {
     embeds: [{
-      title: 'Contact Form Submitted',
+      title: `Contact Form Submitted - ${body.name}`,
       fields: [
         { name: 'Name', value: body.name },
         { name: 'Email', value: body.email },

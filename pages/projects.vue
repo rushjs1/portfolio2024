@@ -5,11 +5,6 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('/p
 
 <template>
   <div class="flex flex-col items-start w-full">
-    <!-- <div class="flex items-center space-x-4 w-full">
-      <BackButton />
-      <span class="text-5xl font-bold"> Projects </span>
-    </div> -->
-
     <div class="flex flex-col items-start w-full space-y-3">
       <div class="flex items-center space-x-4 w-full">
         <BackButton />
