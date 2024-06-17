@@ -55,7 +55,7 @@
             <span>
               Made with 
             </span>
-            <IconNuxt class="h-5 w-5" />
+            <Icon name="logos:nuxt-icon" size="1.7em"/>
           </div>
         </NuxtLink>
       </footer>
@@ -79,33 +79,7 @@ html {
   background-repeat: repeat;
   width: 100%;
   min-height: 100vh;
-/*   background-size: 40px 40px; */
-  background-size: 20px 20px;
-}
-
-.bar {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' transform='scale(3)'%3E%3Crect width='100%25' height='100%25' fill='%23fff'/%3E%3Cpath fill='none' stroke='hsla(0, 0%25, 98%25, 1)' stroke-width='.2' d='M10 0v20ZM0 10h20Z'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  width: 100%;
-  min-height: 100vh;
   background-size: 40px 40px;
-}
-
-.baz {
-  background-image: url('noise2.svg');
-  background-repeat: repeat;
-  min-height: 100vh;
-}
-
-.blah {
-  background-image: url('grid.svg');
-  background-repeat: repeat;
-  min-height: 100vh;
-}
-
-.ahh {
-  background-image: url('cross.svg');
-  background-repeat: repeat;
-  min-height: 100vh;
+/*   background-size: 20px 20px; */
 }
 </style>

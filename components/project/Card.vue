@@ -17,6 +17,11 @@ let icons2 = [
   {tag: 'Neovim', icon: 'devicon:neovim'},
   {tag: 'Lua', icon: 'logos:lua'},
   {tag: 'Plugin', icon: 'heroicons:puzzle-piece'},
+  {tag: 'JavaScript', icon: 'logos:javascript'},
+  {tag: 'Mapbox', icon: 'simple-line-icons:location-pin'},
+  {tag: 'Unity', icon: 'skill-icons:unity-dark'},
+  {tag: 'Oculus', icon: 'gg:oculus'},
+  {tag: 'iOS', icon: 'logos:apple-app-store'},
 ]
 
 function getTagIcon(tag: string){
@@ -50,11 +55,11 @@ function getTagIcon(tag: string){
       {{ props.project.description }}
     </div>
 
-    <NuxtLink :to="props.project.link" target="_blank" external>
+    <NuxtLink v-if="props.project.link" :to="props.project.link" target="_blank" external>
       <div
-        class="mx-2 rounded-md transition-all duration-200 w-fit hover:ring-[1px] ring-white/15 mt-2 p-1 hover:bg-white/10"
+        class="mx-2 rounded-md transition-all duration-200 w-fit hover:ring-[1px] ring-white/15 mt-2 p-0.5 hover:bg-white/10"
       >
-        <IconExternalLink class="h-4 w-4" />
+        <Icon name="heroicons-outline:external-link" size="1.5em"/>
       </div>
     </NuxtLink>
   </div>

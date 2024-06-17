@@ -12,7 +12,6 @@ export default defineEventHandler(async (event) => {
       ]
     }]
   }
-  console.log(webhookUrl)
   
   try {
     await $fetch(webhookUrl, {
