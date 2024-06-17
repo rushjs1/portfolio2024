@@ -1,6 +1,6 @@
 <template>
   <div class="w-full text-white min-h-screen bg-[#161616]">
-    <div class="foo">
+    <div class="">
 
       <!-- <div
         class="bg-blue-800/10 fixed left-64 inset-y-1/4 transition-all duration-200 w-[1500px] h-[300px] rounded-full blur-3xl rotate-[26deg]"
@@ -55,7 +55,7 @@
             <span>
               Made with 
             </span>
-            <IconNuxt class="h-5 w-5" />
+            <Icon name="logos:nuxt-icon" size="1.7em"/>
           </div>
         </NuxtLink>
       </footer>
@@ -69,37 +69,17 @@ html {
   background: #161616;
 }
 
+::selection {
+  background: #FAE38A;
+  color: #000000;
+}
+
 .foo {
   background-image: url('data:image/svg+xml;charset=utf-8,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" transform="scale(3)"%3E%3Crect width="100%25" height="100%25" fill="hsl(0, 0%25, 8.5%25)"%3E%3C/rect%3E%3Crect width="100%25" height="100%25" fill="hsl(0, 0%25, 8.5%25)"%3E%3C/rect%3E%3Cpath fill="none" stroke="hsl(0, 0%25, 11.0%25)" stroke-width=".2" d="M10 0v20ZM0 10h20Z"%3E%3C/path%3E%3C/svg%3E');
   background-repeat: repeat;
   width: 100%;
   min-height: 100vh;
   background-size: 40px 40px;
-}
-
-.bar {
-  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' transform='scale(3)'%3E%3Crect width='100%25' height='100%25' fill='%23fff'/%3E%3Cpath fill='none' stroke='hsla(0, 0%25, 98%25, 1)' stroke-width='.2' d='M10 0v20ZM0 10h20Z'/%3E%3C/svg%3E");
-  background-repeat: repeat;
-  width: 100%;
-  min-height: 100vh;
-  background-size: 40px 40px;
-}
-
-.baz {
-  background-image: url('noise2.svg');
-  background-repeat: repeat;
-  min-height: 100vh;
-}
-
-.blah {
-  background-image: url('grid.svg');
-  background-repeat: repeat;
-  min-height: 100vh;
-}
-
-.ahh {
-  background-image: url('cross.svg');
-  background-repeat: repeat;
-  min-height: 100vh;
+/*   background-size: 20px 20px; */
 }
 </style>

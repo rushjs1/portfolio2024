@@ -64,11 +64,15 @@ async function submit(){
 
 <template>
   <div class="flex flex-col items-start w-full">
-    <div class="flex items-center space-x-4 w-full">
-      <BackButton />
-      <span class="text-5xl font-bold"> Contact </span>
+    <div class="flex flex-col items-start w-full space-y-3">
+      <div class="flex items-center space-x-4 w-full">
+        <BackButton />
+        <span class="text-5xl font-bold"> Contact </span>
+      </div>
+      <span class="bg-yellow-400 rounded-full h-2 w-44">
+      </span>
     </div>
-      <div class="w-full p-6 rounded-lg flex-col space-y-4 backdrop-blur-sm bg-white/10 ring-[1px] ring-white/30 mt-6 mb-20 flex items-start">
+      <div class="w-full p-6 rounded-lg flex-col space-y-4 backdrop-blur-sm bg-white/10 ring-white/30 mt-6 mb-20 flex items-start">
       <form @submit.prevent="submit" action="#" method="post" class="space-y-4 w-full">
         <div class="space-y-1">
           <label for="name">Full Name*</label>
