@@ -39,10 +39,7 @@
         class="bg-yellow-500 absolute bottom-20 xl:right-96 transition-all duration-200 right-10 w-40 h-40 blur-3xl"
       ></div> -->
 
-      <header class="w-full fixed right-0 left-0 top-0 p-4 backdrop-blur-sm z-40">
-        <TheNavbar />
-      </header>
-
+      <TheNavbar />
       <div
         class="m-auto max-w-[1400px] animate-fade-in shrink-0 space-y-6 md:px-10 px-4 flex flex-col pt-48 items-start h-full w-full transition-width duration-200 xl:w-2/3"
       >

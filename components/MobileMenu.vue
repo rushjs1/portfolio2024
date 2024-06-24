@@ -1,17 +1,24 @@
-<script setup>
+<script setup lang="ts">
+import { useWindowScroll } from '@vueuse/core'
 const { isCurrent, navArr } = useNav()
 
-const isOpen = defineModel({ value: false })
+const isOpen = defineModel()
+const isPageTop = ref(true)
+const { y } = useWindowScroll()
 
 function toggle(){
   isOpen.value = !isOpen.value
 
   document.body.style.overflow = isOpen.value ? 'visible' : 'hidden'
 }
+
+watch((y), () => {
+  isPageTop.value = y.value <= 80
+})
 </script>
 
 <template>
-  <div class="flex sm:hidden items-center m-auto justify-end w-full space-x-6 p-6">
+  <div :class="[isPageTop ? 'p-6' : 'p-0', 'flex sm:hidden items-center m-auto justify-end w-full space-x-6 transition-spacing duration-300']">
     <Icon name="pepicons-pop:menu-circle" size="2.5em" class="cursor-pointer" role="button" @click="toggle"/>
   </div>
 

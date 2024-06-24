@@ -10,5 +10,5 @@ export default defineNuxtConfig({
   runtimeConfig: {
     webhookUrl: ''
   },
-  modules: ["@nuxt/content", '@nuxt/ui', '@vee-validate/nuxt'],
+  modules: ["@nuxt/content", '@nuxt/ui', '@vee-validate/nuxt', '@vueuse/nuxt'],
 });
