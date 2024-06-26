@@ -1,3 +1,9 @@
+<script setup lang="ts">
+useSeoMeta({
+  title: 'About'
+})
+</script>
+
 <template>
   <div class="flex flex-col items-start w-full">
     <div class="flex flex-col items-start w-full space-y-3">

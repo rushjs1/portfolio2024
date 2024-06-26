@@ -1,4 +1,7 @@
 <script setup lang="ts">
+useSeoMeta({
+  title: 'Projects',
+})
 
 const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').sort({ id: 1 }).find())
 </script>

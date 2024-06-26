@@ -2,6 +2,10 @@
 import { toTypedSchema } from '@vee-validate/zod';
 import { z } from 'zod'
 
+useSeoMeta({
+  title: 'Contact'
+})
+
 const toast = useToast()
 const isDisabled = ref(false)
 
