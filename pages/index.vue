@@ -10,10 +10,13 @@ useSeoMeta({
       class="bg-slate-300 absolute animate-pulse-slow blur-2xl group-hover:blur-3xl transition-all duration-200 top-1 left-1 inset-0 w-32 h-32"
     ></div>
 
-    <img
+    <NuxtImg
       src="/me.png"
+      alt="Home image"
       class="ring-[2px] rounded-lg h-full w-full absolute object-cover ring-white/20"
-     />
+      placeholder
+      preload
+    />
   </div>
   <span class="text-white text-3xl font-bold md:text-6xl sm:text-5xl">
     John Rush

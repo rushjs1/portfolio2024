@@ -34,9 +34,12 @@ function getTagIcon(tag: string){
   <div class="bg-white/10 space-y-2 backdrop-blur-sm rounded-lg pb-2 ring-white/30">
     <NuxtLink :to="props.project.link" target="_blank" external>
       <div class="overflow-hidden rounded-t-lg">
-        <img
+        <NuxtImg
           :src="props.project.image"
+          :alt="`${props.project.title} image card`"
           class="rounded-t-lg hover:scale-105 transition-all h-full w-full object-cover duration-200"
+          :placeholder="[591, 313]"
+          preload
         />
       </div>
     </NuxtLink>
