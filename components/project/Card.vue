@@ -58,7 +58,7 @@ function getTagIcon(tag: string){
       {{ props.project.description }}
     </div>
 
-    <NuxtLink v-if="props.project.link" :to="props.project.link" target="_blank" external>
+    <NuxtLink v-if="props.project.link" :to="props.project.link" target="_blank" :aria-label="`Link for ${props.project.title}`" external>
       <div
         class="mx-2 rounded-md transition-all duration-200 w-fit hover:ring-[1px] ring-white/15 mt-2 p-0.5 hover:bg-white/10"
       >
