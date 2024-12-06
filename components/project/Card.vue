@@ -50,7 +50,7 @@ function getTagIcon(tag: string){
         class="flex items-center shrink-0 ring-[1px] ring-white/15 gap-2 bg-white/10 px-2 py-1 rounded-md"
       >
         <span class="text-xs">{{ tag.title }}</span>
-        <Icon :name="getTagIcon(tag.title) as string"/>
+        <Icon :name="getTagIcon(tag.title) as string" />
       </div>
     </div>
     <span class="text-3xl tracking-wide font-bold px-2"> {{ props.project.title }}</span>

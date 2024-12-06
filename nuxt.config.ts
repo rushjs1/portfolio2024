@@ -1,15 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+
   runtimeConfig: {
     webhookUrl: ''
   },
+
   app: {
     head: {
       link: [
@@ -20,6 +23,7 @@ export default defineNuxtConfig({
       ]
     }
   },
+
   modules: [
     "@nuxt/content",
     '@nuxt/ui',
@@ -27,4 +31,6 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     "@nuxt/image"
   ],
+
+  compatibilityDate: '2024-12-06',
 });

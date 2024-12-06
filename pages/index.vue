@@ -28,11 +28,11 @@ useSeoMeta({
 
   <div class="flex items-center space-x-3">
     <SocialMediaButton to="https://github.com/rushjs1" aria-label="Github for John Rush">
-      <Icon name="bi:github" size="1.5em" color="black" />
+      <Icon name="bi:github" size="1.5em" color="black" mode="svg"/>
     </SocialMediaButton>
 
     <SocialMediaButton to="https://www.linkedin.com/in/john-rush-6680101a4" aria-label="linkedin for John Rush">
-      <Icon name="logos:linkedin-icon" size="1.5em"/>
+      <Icon name="logos:linkedin-icon" size="1.5em" mode="svg"/>
     </SocialMediaButton>
   </div>
   <div class="flex items-center space-x-4">

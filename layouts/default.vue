@@ -52,7 +52,7 @@
             <span>
               Made with 
             </span>
-            <Icon name="logos:nuxt-icon" size="1.7em"/>
+            <Icon name="logos:nuxt-icon" size="1.15em" />
           </div>
         </NuxtLink>
       </footer>
