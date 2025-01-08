@@ -21,7 +21,7 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'manifest', href: '/site.webmanifest' }
       ],
-    viewport: 'width=device-width, inital-scale=1.0, viewport-fit=cover'
+      viewport: 'width=device-width, initial-scale=1, viewport-fit=cover',
     },
   },
 
