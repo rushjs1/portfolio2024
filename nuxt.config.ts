@@ -20,8 +20,9 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'manifest', href: '/site.webmanifest' }
-      ]
-    }
+      ],
+    viewport: 'width=device-width, inital-scale=0.1, viewport-fit=cover'
+    },
   },
 
   modules: [

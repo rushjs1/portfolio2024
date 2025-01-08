@@ -4,7 +4,6 @@ useSeoMeta({
 })
 
 const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').sort({ id: 1 }).find())
-console.log("bar")
 </script>
 
 <template>
