@@ -64,6 +64,7 @@
 body,
 html {
   background: #161616;
+  height: 100dvh;
   padding-top: env(safe-area-insert-top);
 }
 
