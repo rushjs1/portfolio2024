@@ -64,8 +64,11 @@
 body,
 html {
   background: #161616;
-  height: 100dvh;
   padding-top: env(safe-area-insert-top);
+}
+
+:root {
+  background: #161616;
 }
 
 ::selection {
