@@ -3,7 +3,12 @@ useSeoMeta({
   title: 'Projects',
 })
 
-const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').sort({ id: 1 }).find())
+//const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').sort({ id: 1 }).find())
+const { data: projects } = await useAsyncData('projects', async () => {
+  const res = await queryContent('/projects').find()
+
+  return res.sort((a, b) => Number(a.id) - Number(b.id))
+})
 </script>
 
 <template>

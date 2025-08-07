@@ -6,7 +6,7 @@ const props = defineProps({
   }
 });
 
-let icons2 = [
+const icons2 = [
   {tag: 'Vue', icon: 'logos:vue'},
   {tag: 'Laravel', icon: 'logos:laravel'},
   {tag: 'Tailwindcss', icon: 'devicon:tailwindcss'},
@@ -22,6 +22,9 @@ let icons2 = [
   {tag: 'Unity', icon: 'skill-icons:unity-dark'},
   {tag: 'Oculus', icon: 'gg:oculus'},
   {tag: 'iOS', icon: 'logos:apple-app-store'},
+  {tag: 'VitePress', icon: 'devicon:vitejs' },
+  {tag: 'Markdown', icon: 'skill-icons:markdown-light' },
+  { tag: 'Nextjs', icon: 'logos:nextjs-icon' }
 ]
 
 function getTagIcon(tag: string){
@@ -60,7 +63,7 @@ function getTagIcon(tag: string){
 
     <NuxtLink v-if="props.project.link" :to="props.project.link" target="_blank" :aria-label="`Link for ${props.project.title}`" external>
       <div
-        class="mx-2 rounded-md transition-all duration-200 w-fit hover:ring-[1px] ring-white/15 mt-2 p-0.5 hover:bg-white/10"
+        class="flex items-center mx-2 rounded-md transition-all duration-200 w-fit hover:ring-[1px] ring-white/15 mt-2 p-0.5 hover:bg-white/10"
       >
         <Icon name="heroicons-outline:external-link" size="1.5em"/>
       </div>
