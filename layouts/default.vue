@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full text-white min-h-dvh bg-[#161616]">
+  <div class="w-full text-white min-h-dvh bg-[#161616] overscroll-none">
     <div class="">
 
       <!-- <div
