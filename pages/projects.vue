@@ -1,6 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
   title: 'Projects',
+  ogDescription: 'Explore a curated collection of my web development projects built with modern technologies—featuring custom web apps, platform plugins, widgets, and more.'
 })
 
 //const { data: projects } = await useAsyncData('projects', () => queryContent('/projects').sort({ id: 1 }).find())

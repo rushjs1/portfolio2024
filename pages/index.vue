@@ -1,6 +1,7 @@
 <script setup lang="ts">
 useSeoMeta({
-  title: 'Home'
+  title: 'Home',
+  ogDescription: 'I am a web developer from Indianapolis, Indiana. Lets get in touch!'
 })
 </script>
 
