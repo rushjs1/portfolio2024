@@ -1,7 +1,7 @@
 ---
 id: 1
 title: Loke Skate App 
-description: 'Developed an interactive spot discovery/sharing app using Nextjs and Mapbox. Key features include sharable URLS for deep linking, spot clustering, searching & sorting, SEO optimizations for 26K+ links, and more.'
+description: "Developed the first generation of Loke's web app, an interactive skate-spot discovery/sharing app, using Nextjs and Mapbox. Key features include sharable URLs, randomized popups, clustering, searching & sorting, SEO optimizations(metadata, dynamic sitemap) and more."
 image: '/loke-bg.png'
 link: 'https://app.getloke.com/skate-spots'
 tags: 

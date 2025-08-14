@@ -12,7 +12,13 @@ export default defineNuxtConfig({
   runtimeConfig: {
     webhookUrl: ''
   },
-
+  nitro: {
+    routeRules: {
+      '/cv': {
+        redirect: '/cv.pdf'
+      }
+    }
+  },
   app: {
     head: {
       link: [
