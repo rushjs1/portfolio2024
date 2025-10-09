@@ -23,7 +23,7 @@ useSeoMeta({
     John Rush
   </span>
   <span class="text-md md:text-xl">
-    I am a web developer from <b>Indianapolis, Indiana</b> with a passion for
+    I am a Software Engineer from <b>Indianapolis, Indiana</b> with a passion for
     building secure and user friendly web applications.
   </span>
 
