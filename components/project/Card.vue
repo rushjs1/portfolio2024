@@ -2,71 +2,68 @@
 const props = defineProps({
   project: {
     type: Object,
-    required: true
-  }
-});
+    required: true,
+  },
+})
 
-const icons2 = [
-  {tag: 'Vue', icon: 'logos:vue'},
-  {tag: 'Laravel', icon: 'logos:laravel'},
-  {tag: 'Tailwindcss', icon: 'devicon:tailwindcss'},
-  {tag: 'New Design', icon: 'heroicons:paint-brush'},
-  {tag: 'Ionic', icon: 'logos:ionic-icon'},
-  {tag: 'Capacitor', icon: 'devicon:capacitor'},
-  {tag: 'TypeScript', icon: 'devicon:typescript'},
-  {tag: 'Neovim', icon: 'devicon:neovim'},
-  {tag: 'Lua', icon: 'logos:lua'},
-  {tag: 'Plugin', icon: 'heroicons:puzzle-piece'},
-  {tag: 'JavaScript', icon: 'logos:javascript'},
-  {tag: 'Mapbox', icon: 'simple-line-icons:location-pin'},
-  {tag: 'Unity', icon: 'skill-icons:unity-dark'},
-  {tag: 'Oculus', icon: 'gg:oculus'},
-  {tag: 'iOS', icon: 'logos:apple-app-store'},
-  {tag: 'VitePress', icon: 'devicon:vitejs' },
-  {tag: 'Markdown', icon: 'skill-icons:markdown-light' },
-  { tag: 'Nextjs', icon: 'logos:nextjs-icon' }
-]
-
-function getTagIcon(tag: string){
-  return icons2.find((i) => i.tag === tag)?.icon
+function pad(n: number | string) {
+  return String(n).padStart(2, '0')
 }
-
 </script>
 
 <template>
-  <div class="bg-white/10 space-y-2 backdrop-blur-sm rounded-lg pb-2 ring-white/30">
-    <NuxtLink :to="props.project.link" target="_blank" external>
-      <div class="overflow-hidden rounded-t-lg">
-        <NuxtImg
-          :src="props.project.image"
-          :alt="`${props.project.title} image card`"
-          class="rounded-t-lg hover:scale-105 transition-all h-full w-full object-cover duration-200"
-          :placeholder="[591, 313]"
-          preload
+  <component
+    :is="props.project.link ? 'a' : 'div'"
+    :href="props.project.link || undefined"
+    :target="props.project.link ? '_blank' : undefined"
+    :rel="props.project.link ? 'noreferrer' : undefined"
+    :aria-label="props.project.link ? `Open ${props.project.title}` : undefined"
+    class="group relative grid grid-cols-[2.5rem_1fr] md:grid-cols-[3.5rem_1fr_12rem] items-baseline gap-x-6 md:gap-x-10 gap-y-3 py-8 md:py-10"
+  >
+    <span
+      class="pointer-events-none absolute -left-3 top-0 bottom-0 w-px bg-yellow-400 origin-top scale-y-0 group-hover:scale-y-100 transition-transform duration-[400ms] ease-out"
+    ></span>
+
+    <div class="font-mono text-sm tabular-nums text-white/35 group-hover:text-white/75 transition-colors duration-200">
+      {{ pad(props.project.id) }}
+    </div>
+
+    <div class="flex flex-col gap-3 min-w-0">
+      <div class="flex items-baseline gap-2 flex-wrap">
+        <h3 class="text-3xl md:text-5xl font-semibold tracking-tight text-balance text-white/95">
+          {{ props.project.title }}
+        </h3>
+        <Icon
+          v-if="props.project.link"
+          name="heroicons:arrow-up-right"
+          size="0.85em"
+          class="text-white/30 -translate-x-1 opacity-0 group-hover:opacity-100 group-hover:translate-x-0 group-hover:text-yellow-400 transition-all duration-300 ease-out"
         />
       </div>
-    </NuxtLink>
 
-    <div class="gap-2 flex flex-wrap pb-2 items-center w-fit px-2">
-      <div
-        v-for="(tag, idx) in props.project.tags" :key="idx"
-        class="flex items-center shrink-0 ring-[1px] ring-white/15 gap-2 bg-white/10 px-2 py-1 rounded-md"
-      >
-        <span class="text-xs">{{ tag.title }}</span>
-        <Icon :name="getTagIcon(tag.title) as string" />
+      <p class="text-sm md:text-[0.95rem] leading-relaxed text-white/55 text-pretty max-w-[58ch]">
+        {{ props.project.description }}
+      </p>
+
+      <div class="flex flex-wrap items-center gap-x-2 gap-y-1 pt-0.5">
+        <template v-for="(tag, i) in props.project.tags" :key="i">
+          <span v-if="i !== 0" class="font-mono text-white/15">&middot;</span>
+          <span class="font-mono text-[0.7rem] uppercase tracking-[0.2em] text-white/45">
+            {{ tag.title }}
+          </span>
+        </template>
       </div>
     </div>
-    <span class="text-3xl tracking-wide font-bold px-2"> {{ props.project.title }}</span>
-    <div class="text-sm leading-normal px-2">
-      {{ props.project.description }}
-    </div>
 
-    <NuxtLink v-if="props.project.link" :to="props.project.link" target="_blank" :aria-label="`Link for ${props.project.title}`" external>
-      <div
-        class="flex items-center mx-2 rounded-md transition-all duration-200 w-fit hover:ring-[1px] ring-white/15 mt-2 p-0.5 hover:bg-white/10"
-      >
-        <Icon name="heroicons-outline:external-link" size="1.5em"/>
-      </div>
-    </NuxtLink>
-  </div>
+    <div
+      class="hidden md:block self-start mt-2 h-20 w-full overflow-hidden rounded-md bg-white/[0.02] outline outline-1 -outline-offset-1 outline-white/10 opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 ease-out"
+    >
+      <NuxtImg
+        :src="props.project.image"
+        alt=""
+        class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-[1.04]"
+        :placeholder="[591, 313]"
+      />
+    </div>
+  </component>
 </template>

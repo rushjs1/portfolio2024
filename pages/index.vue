@@ -12,19 +12,24 @@ useSeoMeta({
     ></div>
 
     <NuxtImg
-      src="/me.png"
+      src="/london_4.png"
       alt="Home image"
       class="ring-[2px] rounded-lg h-full w-full absolute object-cover ring-white/20"
-      placeholder
+      width="128"
+      height="128"
+      densities="x1 x2"
       preload
     />
   </div>
   <span class="text-white text-3xl font-bold md:text-6xl sm:text-5xl">
     John Rush
   </span>
-  <span class="text-md md:text-xl">
+  <!-- <span class="text-md md:text-xl">
     I am a Software Engineer from <b>Indianapolis, Indiana</b> with a passion for
     building secure and user friendly web applications.
+  </span> -->
+  <span class="text-md md:text-xl">
+    Full-stack software engineer with a passion for building secure, thoughtfully crafted software that feels great to use.
   </span>
 
   <div class="flex items-center space-x-3">
